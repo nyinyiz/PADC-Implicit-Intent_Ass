@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nyinyi.nw.padc_implicit_intent.MainActivity"
+    tools:showIn="@layout/activity_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<Button
+        android:id="@+id/share_compat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_compat"
+        />
+    <Button
+        android:id="@+id/nav_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_map_btn"
+        android:layout_below="@+id/share_compat"/>
+    <Button
+        android:id="@+id/ph_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ph_call_btn"
+        android:layout_below="@+id/nav_map"/>
+    <Button
+        android:id="@+id/send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email_btn"
+        android:layout_below="@+id/ph_call"/>
+    <Button
+        android:id="@+id/take_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_pic_btn"
+        android:layout_below="@+id/send_email"/>
+    <Button
+        android:id="@+id/select_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_pic_btn"
+        android:layout_below="@+id/take_pic"
+        />
+    <Button
+        android:id="@+id/event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_btn"
+        android:layout_below="@+id/select_pic"/>
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event"
+        android:layout_marginTop="@dimen/margin_16"/>
+
+</RelativeLayout>
